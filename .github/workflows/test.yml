@@ -1,0 +1,17 @@
+name: Test the ADR-Tools
+on: [push]
+jobs:
+  Test:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+
+      - run: echo "This job is running on ${{ matrix.os }}"
+
+      - run: make
