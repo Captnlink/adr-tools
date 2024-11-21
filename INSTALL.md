@@ -1,19 +1,14 @@
 Installation
 ============
 
+From the Dockerfile (Linux, MacOS X)
+-------------------
 
+Add alias this alias to your profile
+> \$ 'alias adr=docker compose -f PATH/TO/adr-tools/compose.yml run --rm adr'
 
-Homebrew (MacOS X)
-------------------
-
-Mac OS X users can install with [Homebrew](https://brew.sh):
-
-    brew install adr-tools
-
-ASDF-VM (Linux, MacOS X)
-------------------------
-
-ADR-Tools can be installed from the [ASDF-VM version manager](https://github.com/asdf-vm/asdf).
+Then use it like this:
+> \$ adr \<command\>
 
 From a Release Package (Linux, MacOS X)
 ---------------------------------------

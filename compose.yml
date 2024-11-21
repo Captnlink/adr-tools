@@ -1,0 +1,7 @@
+services:
+  adr:
+    build:
+      context: .
+      dockerfile: dev-env/Dockerfile
+    volumes:
+      - ${PWD}/doc/adr:/doc/adr
